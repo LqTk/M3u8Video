@@ -92,6 +92,7 @@ public class M3u8DownloadFactory {
 
         //已经下载的文件大小
         private BigDecimal downloadBytes = new BigDecimal(0);
+        private String mediaType = ".mp4";
 
         /**
          * 开始下载视频
@@ -157,7 +158,7 @@ public class M3u8DownloadFactory {
          */
         private void mergeTs() {
             try {
-                File file = new File(dir + FILESEPARATOR + fileName + ".mp4");
+                File file = new File(dir + FILESEPARATOR + fileName + mediaType);
                 if (file.exists())
                     file.delete();
                 else file.createNewFile();
@@ -184,7 +185,7 @@ public class M3u8DownloadFactory {
         private void deleteFiles() {
             File file = new File(dir);
             for (File f : file.listFiles()) {
-                if (!f.getName().endsWith(".mp4"))
+                if (!f.getName().endsWith(mediaType))
                     f.delete();
             }
         }
@@ -520,6 +521,10 @@ public class M3u8DownloadFactory {
 
         public void setRetryCount(int retryCount) {
             this.retryCount = retryCount;
+        }
+
+        public void setMediaType(String type) {
+            this.mediaType = type;
         }
 
         public long getTimeoutMillisecond() {
