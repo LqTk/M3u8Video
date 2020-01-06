@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c0cf3b4-462b-4d1c-a22e-c3580008df58" name="Default Changelist" comment="可视化页面" />
+    <list default="true" id="8c0cf3b4-462b-4d1c-a22e-c3580008df58" name="Default Changelist" comment="可视化页面">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/MyView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/MyView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyView.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+            <state relative-caret-position="360">
+              <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#MyView#0" />
@@ -51,10 +55,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="573" column="16" selection-start-line="573" selection-start-column="16" selection-end-line="573" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="210" column="46" lean-forward="true" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
+            <state relative-caret-position="6300">
+              <caret line="210" column="46" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/M3u8Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="1230">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -116,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/download/M3u8DownloadFactory.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/src/MyView.java" />
         <option value="$PROJECT_DIR$/src/MyView.form" />
+        <option value="$PROJECT_DIR$/src/MyView.java" />
       </list>
     </option>
   </component>
@@ -135,9 +157,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="602" />
-    <option name="width" value="1176" />
-    <option name="height" value="742" />
+    <option name="x" value="810" />
+    <option name="y" value="124" />
+    <option name="width" value="1491" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -156,6 +179,11 @@
               <item name="m3u8Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="m3u8Video" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="m3u8Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m3u8Video" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +196,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="494" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -177,13 +205,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\iedaPro\m3u8Video\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\iedaPro\m3u8Video\.idea" />
       <recent name="F:\iedaPro\m3u8Video\exeFile" />
       <recent name="F:\iedaPro\m3u8Video\lib" />
       <recent name="F:\iedaPro\m3u8Video\src\utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\iedaPro\m3u8Video\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -245,7 +274,8 @@
       <workItem from="1577948069558" duration="9170000" />
       <workItem from="1578274128274" duration="327000" />
       <workItem from="1578274488963" duration="16331000" />
-      <workItem from="1578296230319" duration="683000" />
+      <workItem from="1578296230319" duration="2351000" />
+      <workItem from="1578298851376" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="M3u8视频下载合并">
       <created>1577086156008</created>
@@ -293,13 +323,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68061000" />
+    <option name="totallyTimeSpent" value="69760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.1924307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.1945629" />
       <window_info id="Structure" order="1" sideWeight="0.5044543" side_tool="true" weight="0.17643923" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -502,12 +532,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -541,12 +565,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6300">
+          <caret line="210" column="46" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyView.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/M3u8Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
+        <state relative-caret-position="1230">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -555,20 +596,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="210" column="46" lean-forward="true" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="573" column="16" selection-start-line="573" selection-start-column="16" selection-end-line="573" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+        <state relative-caret-position="360">
+          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#MyView#0" />
