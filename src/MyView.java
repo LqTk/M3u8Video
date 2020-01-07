@@ -38,6 +38,7 @@ public class MyView{
     private JTextField otherUrl;
     private JButton btnDownOther;
     private JPanel pannelOther;
+    private JTextField textOtherName;
     private JFileChooser fileChooser = new JFileChooser();
     private static int processValue;
     private String mediaTypeString = ".mp4";
