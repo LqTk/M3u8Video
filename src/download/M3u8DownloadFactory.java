@@ -146,7 +146,6 @@ public class M3u8DownloadFactory {
                 mergeTs();
                 //删除多余的ts片段
                 deleteFiles();
-                downStatue.m3u8ToMp4();
                 System.out.println(fileName+" 视频合并完成，欢迎使用!");
                 m3u8Download = null;
                 downStatue.downLoadThisOk();

@@ -6,11 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c0cf3b4-462b-4d1c-a22e-c3580008df58" name="Default Changelist" comment="vcs Git页面显示">
+    <list default="true" id="8c0cf3b4-462b-4d1c-a22e-c3580008df58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/download/DownLoadTsOther.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/m3u8Video_jar/m3u8Video.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/m3u8Video_jar/m3u8Video.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/M3u8Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/M3u8Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/M3u8Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/M3u8Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/MyView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/MyView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/MyView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/MyView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/MyView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/MyView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/MyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/MyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/download/DownStatue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/download/DownStatue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/download/M3u8DownloadFactory$M3u8Download.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/download/M3u8DownloadFactory$M3u8Download.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/m3u8Video/download/M3u8DownloadFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/m3u8Video/download/M3u8DownloadFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/M3u8Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/M3u8Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/download/DownStatue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/download/DownStatue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/download/M3u8DownloadFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/download/M3u8DownloadFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/StringUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,35 +54,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="137" column="98" selection-start-line="137" selection-start-column="98" selection-end-line="137" selection-end-column="98" />
+            <state relative-caret-position="537">
+              <caret line="463" column="44" lean-forward="true" selection-start-line="463" selection-start-column="44" selection-end-line="463" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#MyView#0" />
-                <element signature="method#startDownload#0;class#MyView#0" />
-                <element signature="method#transMedia#0;class#MyView#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17910">
-              <caret line="597" column="16" selection-start-line="597" selection-start-column="16" selection-end-line="597" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -77,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5610">
-              <caret line="210" column="46" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
+            <state relative-caret-position="3720">
+              <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,15 +83,37 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/M3u8Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="-95">
+              <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#mergeTs#0;class#M3u8Main#0" />
                 <element signature="method#startDownload#0;class#M3u8Main#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/download/DownLoadTsOther.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/download/DownStatue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -121,6 +135,11 @@
       <find>tsSet</find>
       <find>finishedCount</find>
       <find>proDown</find>
+      <find>mergeTs</find>
+      <find>downloadBytes</find>
+      <find>第5</find>
+      <find>finishedFiles</find>
+      <find>https://lmbsy.qq.com/uwMROfz2r5zAoaQXGdGnC2dfKb6Dd5n5TJOTU0jlQFcO2-vB/n00110watse.p202.1.mp4?sdtfrom=v1010&amp;guid=58b6ccf4b48843f948d594566223b123&amp;vkey=3869CEFCD57428DE1213C8677CB97A1B9E9179740DB67D6D418AC1F49F01D2ECDE154A2A4969913B0B1807D663056D0E26C89453C648308B9C9A594A2B7D51F4854B1CF84C9736DC453937460859438950F371FE1D575E1CE15FA21EF414A4A378E8371E2772661AD91FB270534F28E0778D3DEFF73784EFCF3EB74DDBF362ED</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,13 +154,15 @@
         <option value="$PROJECT_DIR$/src/DownStatue.java" />
         <option value="$PROJECT_DIR$/src/dd.form" />
         <option value="$PROJECT_DIR$/src/dd.java" />
-        <option value="$PROJECT_DIR$/src/download/DownStatue.java" />
-        <option value="$PROJECT_DIR$/src/M3u8Main.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/download/M3u8DownloadFactory.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/src/MyView.form" />
+        <option value="$PROJECT_DIR$/src/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/download/DownStatue.java" />
+        <option value="$PROJECT_DIR$/src/download/M3u8DownloadFactory.java" />
+        <option value="$PROJECT_DIR$/src/download/DownLoadTsOther.java" />
         <option value="$PROJECT_DIR$/src/MyView.java" />
+        <option value="$PROJECT_DIR$/src/MyView.form" />
+        <option value="$PROJECT_DIR$/src/M3u8Main.java" />
       </list>
     </option>
   </component>
@@ -159,10 +180,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="810" />
-    <option name="y" value="124" />
-    <option name="width" value="1491" />
-    <option name="height" value="1047" />
+    <option name="x" value="546" />
+    <option name="y" value="20" />
+    <option name="width" value="1040" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -172,6 +193,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,12 +220,27 @@
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="m3u8Video_jar" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="m3u8Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m3u8Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m3u8Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m3u8Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="download" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m3u8Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m3u8Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MyView" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,6 +252,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14631782" />
@@ -242,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyView">
+  <component name="RunManager" selected="Application.M3u8Main">
     <configuration name="M3u8Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="M3u8Main" />
       <module name="m3u8Video" />
@@ -265,8 +304,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyView" />
         <item itemvalue="Application.M3u8Main" />
+        <item itemvalue="Application.MyView" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +330,10 @@
       <workItem from="1578274488963" duration="16331000" />
       <workItem from="1578296230319" duration="2351000" />
       <workItem from="1578298851376" duration="881000" />
-      <workItem from="1578377816691" duration="380000" />
+      <workItem from="1578377816691" duration="3586000" />
+      <workItem from="1578446519458" duration="21048000" />
+      <workItem from="1578533163677" duration="19205000" />
+      <workItem from="1578618762088" duration="8719000" />
     </task>
     <task id="LOCAL-00001" summary="M3u8视频下载合并">
       <created>1577086156008</created>
@@ -342,17 +384,33 @@
       <option name="project" value="LOCAL" />
       <updated>1578298948755</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="显示bug修改">
+      <created>1578378362258</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578378362258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70990000" />
+    <option name="totallyTimeSpent" value="123168000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.19669509" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.14765458" />
       <window_info id="Structure" order="1" sideWeight="0.5044543" side_tool="true" weight="0.17643923" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -362,15 +420,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32628062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19042316" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.518931" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5077951" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45879734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.43159065" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.43095767" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.33481646" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33407572" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -398,52 +456,71 @@
     <MESSAGE value="d" />
     <MESSAGE value="可视化页面" />
     <MESSAGE value="vcs Git页面显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="vcs Git页面显示" />
+    <MESSAGE value="显示bug修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="显示bug修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/M3u8Main.java</url>
-          <line>66</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>308</line>
+          <line>427</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>289</line>
+          <line>400</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>458</line>
+          <line>580</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>456</line>
+          <line>578</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>437</line>
+          <line>559</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyView.java</url>
-          <line>373</line>
+          <line>495</line>
           <properties />
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java</url>
+          <line>285</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/download/DownLoadTsOther.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -468,38 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/MediaFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK/install/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="804" column="11" selection-start-line="804" selection-start-column="11" selection-end-line="804" selection-end-column="11" />
-          <folding>
-            <element signature="e#34114#34115#0" expanded="true" />
-            <element signature="e#34170#34171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -531,13 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="106" column="39" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/download/DownStatue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -592,29 +634,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17910">
-          <caret line="597" column="16" selection-start-line="597" selection-start-column="16" selection-end-line="597" selection-end-column="16" />
+        <state relative-caret-position="18210">
+          <caret line="607" column="16" selection-start-line="607" selection-start-column="16" selection-end-line="607" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK/install/src.zip!/java/util/concurrent/ConcurrentSkipListSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/MediaFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK/install/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="1538" column="51" selection-start-line="1538" selection-start-column="28" selection-end-line="1538" selection-end-column="51" />
+          <folding>
+            <element signature="e#34114#34115#0" expanded="true" />
+            <element signature="e#34170#34171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/download/M3u8DownloadFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5610">
-          <caret line="210" column="46" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
+        <state relative-caret-position="3720">
+          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/M3u8Main.java">
+    <entry file="file://$PROJECT_DIR$/src/download/DownStatue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#startDownload#0;class#M3u8Main#0" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -623,13 +696,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="137" column="98" selection-start-line="137" selection-start-column="98" selection-end-line="137" selection-end-column="98" />
+        <state relative-caret-position="537">
+          <caret line="463" column="44" lean-forward="true" selection-start-line="463" selection-start-column="44" selection-end-line="463" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#MyView#0" />
-            <element signature="method#startDownload#0;class#MyView#0" />
-            <element signature="method#transMedia#0;class#MyView#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download/DownLoadTsOther.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/M3u8Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mergeTs#0;class#M3u8Main#0" />
+            <element signature="method#startDownload#0;class#M3u8Main#0" />
           </folding>
         </state>
       </provider>

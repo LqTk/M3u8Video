@@ -35,7 +35,7 @@ public class StringUtils {
 
     public static String convertToDownloadSpeed(BigDecimal bigDecimal,int scale) {
         BigDecimal unit = new BigDecimal(1);
-        BigDecimal kb = new BigDecimal(1 << 10);
+        BigDecimal kb = new BigDecimal(1 << 10);//2^10=1024
         BigDecimal mb = new BigDecimal(1 << 10).multiply(kb);
         BigDecimal gb = new BigDecimal(1 << 10).multiply(mb);
         BigDecimal tb = new BigDecimal(1 << 10).multiply(gb);

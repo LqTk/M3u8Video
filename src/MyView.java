@@ -1,3 +1,4 @@
+import download.DownLoadTsOther;
 import download.DownStatue;
 import download.M3u8DownloadFactory;
 
@@ -38,11 +39,21 @@ public class MyView{
     private JTextField otherUrl;
     private JButton btnDownOther;
     private JPanel pannelOther;
+    private JPanel pannelTs;
+    private JTextField tsOutName;
+    private JComboBox tsOutType;
+    private JTextField textTsUrl;
+    private JTextField tsOutPath;
+    private JButton btnTsPathOut;
+    private JButton btnDownTs;
+    private JLabel tsFinshed;
+    private JLabel tsTime;
     private JTextField textOtherName;
     private JFileChooser fileChooser = new JFileChooser();
     private static int processValue;
     private String mediaTypeString = ".mp4";
     private String mediaOutTypeString = ".mp4";
+    private String tsOutTypeString = ".mp4";
     private DownStatue downStatue = new DownStatue() {
         @Override
         public void downLoadThisOk() {
@@ -63,7 +74,7 @@ public class MyView{
         }
 
         @Override
-        public void m3u8ToMp4() {
+        public void downLoadCount(String count) {
         }
 
         @Override
@@ -76,6 +87,42 @@ public class MyView{
             JOptionPane.showMessageDialog(frame,"下载失败","提示",JOptionPane.INFORMATION_MESSAGE);
         }
     };
+
+    private DownStatue downTsStatue = new DownStatue() {
+        @Override
+        public void downLoadThisOk() {
+            btnDownTs.setText("开始下载");
+            btnDownTs.setEnabled(true);
+            if (pannelTs.isVisible()){
+                frame.setTitle("ts下载");
+            }
+            JOptionPane.showMessageDialog(frame,"下载完成","提示",JOptionPane.INFORMATION_MESSAGE);
+            tsTime.setText("");
+            tsFinshed.setText("");
+        }
+
+        @Override
+        public void downLoadProcess(String process) {
+            tsTime.setText(process);
+        }
+
+        @Override
+        public void downLoadCount(String count) {
+            tsFinshed.setText(count);
+        }
+
+        @Override
+        public void downLoadError() {
+            btnDownTs.setText("开始下载");
+            btnDownTs.setEnabled(true);
+            if (pannelTs.isVisible()){
+                frame.setTitle("ts下载");
+            }
+            JOptionPane.showMessageDialog(frame,"下载失败","提示",JOptionPane.INFORMATION_MESSAGE);
+            tsTime.setText("");
+            tsFinshed.setText("");
+        }
+    };
     private M3u8DownloadFactory.M3u8Download m3u8Download;
     public static MenuItemListener menuItemListener = new MenuItemListener();
 
@@ -86,6 +133,7 @@ public class MyView{
                 pannelChange.setVisible(true);
                 pannelDown.setVisible(false);
                 pannelOther.setVisible(false);
+                pannelTs.setVisible(false);
                 if (!btnDown.isEnabled() || !btnDownOther.isEnabled()) {
                     frame.setTitle("视频转换(正在下载视频)");
                 }else {
@@ -95,6 +143,7 @@ public class MyView{
                 pannelDown.setVisible(true);
                 pannelChange.setVisible(false);
                 pannelOther.setVisible(false);
+                pannelTs.setVisible(false);
                 if (!btnTrans.isEnabled()){
                     frame.setTitle("m3u8下载器(正在转换视频)");
                 }else {
@@ -104,20 +153,31 @@ public class MyView{
                 pannelOther.setVisible(true);
                 pannelDown.setVisible(false);
                 pannelChange.setVisible(false);
+                pannelTs.setVisible(false);
                 if (!btnTrans.isEnabled()){
                     frame.setTitle("其它下载(正在转换视频)");
                 }else {
                     frame.setTitle("其它下载");
+                }
+            }else if (str.equals("ts下载")){
+                pannelTs.setVisible(true);
+                pannelOther.setVisible(false);
+                pannelDown.setVisible(false);
+                pannelChange.setVisible(false);
+                if (!btnTrans.isEnabled()){
+                    frame.setTitle("ts下载(正在转换视频)");
+                }else {
+                    frame.setTitle("ts下载");
                 }
             }
         }
     };
 
     public static void main(String[] args) {
-        frame = new JFrame("m3u8下载器");
+        frame = new JFrame("ts下载");
+        frame.setSize(400,300);
         frame.setContentPane(new MyView().homePanel);
         initMenuBar(frame);
-        frame.setSize(400,300);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension frameSize = frame.getSize();
         if (frameSize.height > screenSize.height) {
@@ -139,12 +199,24 @@ public class MyView{
         menuItemListener.setClick(menuItemClick);
         pannelChange.setVisible(false);
         pannelOther.setVisible(false);
+        pannelDown.setVisible(false);
 
         for (String str:mediaTypeStr){
             mediaType.addItem(str);
             outType.addItem(str);
+            tsOutType.addItem(str);
         }
 
+        tsOutType.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                // 只处理选中的状态
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    System.out.println("选中: " + tsOutType.getSelectedIndex() + " = " + tsOutType.getSelectedItem());
+                    tsOutTypeString = tsOutType.getSelectedItem().toString();
+                }
+            }
+        });
         outType.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
@@ -223,6 +295,33 @@ public class MyView{
                 }).start();
             }
         });
+        btnDownTs.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = tsOutName.getText().toString();
+                String path = tsOutPath.getText().toString();
+                String url = textTsUrl.getText().toString();
+                if (url == null || url.equals("")) {
+                    JOptionPane.showMessageDialog(otherUrl.getParent(), "下载地址不能为空", "提示", JOptionPane.WARNING_MESSAGE);
+                    return;
+                } else if (path == null || path.equals("")) {
+                    JOptionPane.showMessageDialog(otherOutPath.getParent(), "请选择保存路径", "提示", JOptionPane.WARNING_MESSAGE);
+                    return;
+                } else if (name == null || name.equals("")) {
+                    JOptionPane.showMessageDialog(otherOutPath.getParent(), "请输入名称", "提示", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        btnDownTs.setText("正在下载..");
+                        btnDownTs.setEnabled(false);
+                        downloadTs(url,path,name);
+                    }
+                }).start();
+            }
+        });
         //选择路径
         btnFileRoot.addActionListener(new ActionListener() {
             @Override
@@ -232,6 +331,18 @@ public class MyView{
                 fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
                 if (fileChooser.showOpenDialog(frame.getContentPane())==JFileChooser.OPEN_DIALOG){
                     saveRoot.setText(fileChooser.getSelectedFile().getAbsolutePath());
+                }
+            }
+        });
+        //选择路径
+        btnTsPathOut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                fileChooser.setDialogTitle("选择存储路径");
+                fileChooser.setApproveButtonText("确定");
+                fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                if (fileChooser.showOpenDialog(frame.getContentPane())==JFileChooser.OPEN_DIALOG){
+                    tsOutPath.setText(fileChooser.getSelectedFile().getAbsolutePath());
                 }
             }
         });
@@ -304,6 +415,14 @@ public class MyView{
         });
     }
 
+    private void downloadTs(String url, String path, String name) {
+        DownLoadTsOther loadTsOther = DownLoadTsOther.getInstance(downTsStatue);
+        loadTsOther.setDir(path);
+        loadTsOther.setFileName(name);
+        loadTsOther.setMediaType(tsOutTypeString);
+        loadTsOther.startDown(url);
+    }
+
     private void startDownload(String url,String name,String filePath,String mediaType){
 
         m3u8Download =  M3u8DownloadFactory.getInstance(url,downStatue);
@@ -331,13 +450,16 @@ public class MyView{
 
         JMenu functionMenu = new JMenu("功能");
 
+        JMenuItem functionMenuItem4 = new JMenuItem("ts下载");
         JMenuItem functionMenuItem1 = new JMenuItem("m3u8视频下载");
         JMenuItem functionMenuItem2 = new JMenuItem("其它下载");
         JMenuItem functionMenuItem3 = new JMenuItem("视频转换");
 
+        functionMenuItem4.addActionListener(menuItemListener);
         functionMenuItem1.addActionListener(menuItemListener);
         functionMenuItem2.addActionListener(menuItemListener);
         functionMenuItem3.addActionListener(menuItemListener);
+        functionMenu.add(functionMenuItem4);
         functionMenu.add(functionMenuItem1);
         functionMenu.add(functionMenuItem2);
         functionMenu.add(functionMenuItem3);
